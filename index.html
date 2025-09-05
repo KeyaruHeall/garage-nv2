@@ -1,155 +1,68 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
-    <meta charset="UTF-8">
-    <title>Painel Estética Automotiva</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Painel Estética Automotiva</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <div class="top-nav">
+  <div class="top-nav">
     <button id="themeToggle">🌗 Alternar Tema</button>
     <nav>
-        <ul>
-            <li onclick="showPage('home')">🏠 Home</li>
-            <li onclick="showPage('planoA')">📅 Plano A</li>
-            <li onclick="showPage('planoB')">🧭 Plano B</li>
-            <li onclick="showPage('ferramentas')">🔧 Ferramentas</li>
-        </ul>
+      <ul>
+        <li onclick="showPage('home')">🏠 Home</li>
+        <li onclick="showPage('planoA')">📅 Plano A</li>
+        <li onclick="showPage('planoB')">🧭 Plano B</li>
+        <li onclick="showPage('ferramentas')">🔧 Ferramentas</li>
+        <li onclick="showPage('produtos')">🧼 Produtos</li>
+      </ul>
     </nav>
-</div>
+  </div>
 
-    <div class="container">
+  <div class="container">
+    <section id="home" class="page active">
+      <h1>🚗 Projeto: Detalhamento Automotivo / Remap Nv1</h1>
+      <p><strong>Identidade visual:</strong> Minimalista com vibe NFS</p>
+      <p><strong>Local:</strong> Bairro Alto, Curitiba</p>
+      <p><strong>Objetivo:</strong> Criar uma estética automotiva com foco em vans escolares e remap Stage 1</p>
+      <p><strong>Perfil empreendedor:</strong> Maykel, 23 anos, casado.</p>
+    </section>
 
-        <section id="home" class="page active">
-            <h1>🚗 Projeto: Detalhamento Automotivo / Remap Nv1</h1>
-            <p><strong>Identidade visual:</strong> Minimalista com vibe NFS</p>
-            <p><strong>Local:</strong> Bairro Alto, Curitiba</p>
-            <p><strong>Objetivo:</strong> Criar uma estética automotiva com foco em vans escolares e remap Stage 1</p>
-            <p><strong>Perfil empreendedor:</strong> Maykel, 23 anos, casado.</p>
-        </section>
+    <section id="planoA" class="page">
+      <h2>📅 Plano A - Metas Semanais</h2>
+      <!-- conteúdo do plano A -->
+    </section>
 
-        <section id="planoA" class="page">
-            <h2>📅 Plano A - Metas Semanais</h2>
-            <h3>Semana 1</h3>
-            <ul>
-                <li>✅ Definir nome e identidade visual</li>
-                <li>✅ Criar logo e redes sociais</li>
-                <li>✅ Listar equipamentos e fornecedores</li>
-            </ul>
-            <h3>Semana 2</h3>
-            <ul>
-                <li>✅ Organizar espaço físico</li>
-                <li>✅ Testar equipamentos</li>
-                <li>✅ Criar tabela de serviços</li>
-            </ul>
-            <h3>Semana 3</h3>
-            <ul>
-                <li>✅ Atendimentos promocionais</li>
-                <li>✅ Criar portfólio visual</li>
-                <li>✅ Oferecer combos para vans</li>
-            </ul>
-            <h3>Semana 4</h3>
-            <ul>
-                <li>✅ Abrir MEI</li>
-                <li>✅ Criar planilha financeira</li>
-                <li>✅ Iniciar curso de remap</li>
-            </ul>
+    <section id="planoB" class="page">
+      <h2>🧭 Plano B - Alternativas e Expansão</h2>
+      <!-- conteúdo do plano B -->
+    </section>
 
-                <h3>🎨 Identidade Visual</h3>
-                <div class="color-palette">
-                    <div class="color-box" style="background-color: #1c1c1c;">
-                        <span>#1c1c1c</span>
-                    </div>
-                    <div class="color-box" style="background-color: #eaeaea; color: #1c1c1c;">
-                        <span>#eaeaea</span>
-                    </div>
-                    <div class="color-box" style="background-color: #ff3b3b;">
-                        <span>#ff3b3b</span>
-                    </div>
-                    <div class="color-box" style="background-color: #2980b9;">
-                        <span>#2980b9</span>
-                    </div>
-                </div>
+    <section id="ferramentas" class="page">
+      <h2>🔧 Ferramentas</h2>
+      <ul>
+        <li>Abafador UAD 2000 da 3M</li>
+        <li>Capacete V-Gard</li>
+        <li>Óculos de segurança</li>
+        <li>Protetor de orelha (modelo, portas)</li>
+        <li>Luvas de borracha</li>
+      </ul>
+    </section>
 
-            <h3>📈 Faturamento Estimado</h3>
-            <table>
-                <tr>
-                    <th>Mês</th>
-                    <th>Veículos/dia</th>
-                    <th>Preço médio</th>
-                    <th>Faturamento</th>
-                    <th>Lucro</th>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>R$ 100</td>
-                    <td>R$ 4.000</td>
-                    <td>R$ 2.500</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>4</td>
-                    <td>R$ 120</td>
-                    <td>R$ 9.600</td>
-                    <td>R$ 6.500</td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>6</td>
-                    <td>R$ 130</td>
-                    <td>R$ 15.600</td>
-                    <td>R$ 11.000</td>
-                </tr>
-            </table>
+    <section id="produtos" class="page">
+      <h2>🧼 Produtos para limpeza</h2>
+      <ul>
+        <li>Desinfetante</li>
+        <li>Álcool 70%</li>
+        <li>Detergente</li>
+        <li>Sabão em pó</li>
+        <li>Cera Pastosa, Cera Spray Vonixx</li>
+        <li>Vela Qualitex</li>
+      </ul>
+    </section>
+  </div>
 
-            <h3>🔧 Remap Stage 1</h3>
-            <ul>
-                <li>Estudo teórico: OBD2, CAN bus, ECU basics</li>
-                <li>Ferramentas: KESSv2, WinOLS, ECM Titanium</li>
-                <li>Prática com carros da família e oficinas parceiras</li>
-
-            </ul>
-        </section>
-
-        <section id="planoB" class="page">
-            <h2>🧭 Plano B - Alternativas e Expansão</h2>
-            <ul>
-                <li>Serviços paralelos: película, acessórios, limpeza</li>
-                <li>Freelance técnico: sites, automações, marketing</li>
-                <li>Conteúdo digital: YouTube, Instagram, blog</li>
-                <li>Educação: cursos de remap, gestão, vendas</li>
-            </ul>
-            <blockquote>“Plano B não é fuga. É reforço.”</blockquote>
-        </section>
-
-        <section id="ferramentas" class="page">
-            <h2>🔧 Ferramentas e Produtos</h2>
-            <ul>
-                <li>Lavadora WAP Ousada WL 2610</li>
-                <li>Snow Foam Sgt-9923</li>
-                <li>Luva Dub Glove + Luva Lincoln</li>
-                <li>Filme Stretch para volante</li>
-                <li>Toalhas microfibra (carro, rodas, portas)</li>
-                <li>4 pincéis para detalhamento</li>
-            </ul>
-
-            <h3>🧼 Produtos para lavagem</h3>
-            <ul>
-                <li>Demolidor Cadillac 5L</li>
-                <li>Shampoo Cadillac Neutro 5L</li>
-                <li>Multilimpador Visão Química</li>
-                <li>Silicone Gel, Pretinho Cadillac, Cera Spray Vonixx</li>
-                <li>Aromatizantes Visão Química</li>
-            </ul>
-        </section>
-
-    </div>
-
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
-
 </html>
