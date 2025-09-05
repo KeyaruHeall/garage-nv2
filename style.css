@@ -14,6 +14,10 @@ body.light {
   --border-color: #ccc;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Segoe UI', sans-serif;
   background-color: var(--bg-color);
@@ -21,138 +25,9 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.6;
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-h1, h2, h3 {
-  font-weight: 600;
-  margin-bottom: 10px;
-  text-align: center;
-}
-
-.container {
-  padding: 20px;
-}
-
-.top-nav {
-  background-color: var(--card-bg);
-  border: 2px solid var(--border-color);
-  border-radius: 12px;
-  padding: 20px;
-  margin: 20px auto;
-  max-width: 600px;
-  text-align: center;
-  box-shadow: 0 0 10px rgba(0,0,0,0.2);
-}
-
-.top-nav button {
-  margin-bottom: 15px;
+  max-width: 100vw;
+  overflow-x: hidden;
   font-size: 1rem;
-  padding: 10px 20px;
-  border-radius: 8px;
-  background-color: var(--accent-blue);
-  color: var(--text-color);
-  border: none;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.top-nav button:hover {
-  background-color: var(--accent-red);
-}
-
-nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 12px;
-}
-
-nav li {
-  background-color: var(--card-bg);
-  padding: 10px 16px;
-  border-radius: 8px;
-  font-weight: bold;
-  color: var(--accent-red);
-  cursor: pointer;
-  transition: transform 0.2s ease, color 0.3s ease;
-}
-
-nav li:hover {
-  color: var(--accent-blue);
-  transform: scale(1.05);
-}
-
-.page {
-  display: none;
-  padding: 20px;
-  border-radius: 10px;
-  background-color: var(--card-bg);
-  margin-bottom: 20px;
-}
-
-.page.active {
-  display: block;
-}
-
-@media (max-width: 768px) {
-  .container {
-    padding: 10px;
-  }
-
-  .top-nav {
-    max-width: 90%;
-    padding: 16px;
-  }
-
-  nav ul {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  nav li {
-    width: 100%;
-    text-align: center;
-  }
-
-  .top-nav button {
-    width: 100%;
-  }
-
-  h1 {
-    font-size: 1.4rem;
-  }
-
-  h2, h3 {
-    font-size: 1.2rem;
-  }
-}
-:root {
-  --bg-color: #1c1c1c;
-  --text-color: #eaeaea;
-  --accent-red: #ff3b3b;
-  --accent-blue: #2980b9;
-  --card-bg: #2c2c2c;
-  --border-color: #444;
-}
-
-body.light {
-  --bg-color: #f4f4f4;
-  --text-color: #1c1c1c;
-  --card-bg: #ffffff;
-  --border-color: #ccc;
-}
-
-body {
-  font-family: 'Segoe UI', sans-serif;
-  background-color: var(--bg-color);
-  color: var(--text-color);
-  margin: 0;
-  padding: 0;
-  line-height: 1.6;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
@@ -160,8 +35,6 @@ h1, h2, h3 {
   font-weight: 600;
   margin-bottom: 10px;
   text-align: center;
-  border-radius: 12px;
-  padding: 8px;
 }
 
 .container {
@@ -290,7 +163,39 @@ blockquote {
   box-shadow: 0 0 5px rgba(0,0,0,0.3);
 }
 
+.checklist {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.checklist label {
+  background-color: rgba(255,255,255,0.05);
+  padding: 10px 14px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.checklist input[type="checkbox"] {
+  transform: scale(1.2);
+  accent-color: var(--accent-blue);
+}
+
+.checklist label:hover {
+  background-color: rgba(255,255,255,0.1);
+}
+
 @media (max-width: 768px) {
+  body {
+    font-size: 0.95rem;
+  }
+
   .container {
     padding: 10px;
   }
@@ -331,31 +236,9 @@ blockquote {
     width: 90%;
     font-size: 1rem;
   }
-}
-.checklist {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  margin-top: 20px;
-}
 
-.checklist label {
-  background-color: rgba(255,255,255,0.05);
-  padding: 10px 14px;
-  border-radius: 12px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  font-weight: 500;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.checklist input[type="checkbox"] {
-  transform: scale(1.2);
-  accent-color: var(--accent-blue);
-}
-
-.checklist label:hover {
-  background-color: rgba(255,255,255,0.1);
+  .checklist label {
+    font-size: 0.9rem;
+    padding: 8px 10px;
+  }
 }
