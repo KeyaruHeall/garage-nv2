@@ -5,22 +5,27 @@
   <title>Painel Estética Automotiva</title>
   <link rel="stylesheet" href="style.css">
   <link rel="manifest" href="manifest.json">
-<meta name="theme-color" content="#2980b9">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+  <meta name="theme-color" content="#2980b9">
 </head>
 <body>
 
   <div class="top-nav">
-    <button id="themeToggle">🌗 Alternar Tema</button>
-    <nav>
-      <ul>
-        <li onclick="showPage('home')">🏠 Home</li>
-        <li onclick="showPage('planoA')">📅 Plano A</li>
-        <li onclick="showPage('planoB')">🧭 Plano B</li>
-        <li onclick="showPage('ferramentas')">🔧 Ferramentas</li>
-        <li onclick="showPage('produtos')">🧼 Produtos</li>
-      </ul>
-    </nav>
-  </div>
+  <nav>
+    <ul>
+      <li class="logo-nav">
+        <img src="logo-ghost-detail.png" alt="Ghost Detail Logo">
+      </li>
+      <li onclick="showPage('home')">🏠 Home</li>
+      <li onclick="showPage('planoA')">📄 Plano A</li>
+      <li onclick="showPage('planoB')">📄 Plano B</li>
+      <li onclick="showPage('ferramentas')">🛠️ Ferramentas</li>
+      <li onclick="showPage('produtos')">📦 Produtos</li>
+    </ul>
+  </nav>
+
+  <button id="themeToggle">👻 Tema Ghost</button>
+</div>
 
   <div class="container">
     <section id="home" class="page active">
@@ -32,111 +37,114 @@
     </section>
 
     <section id="planoA" class="page">
-  <h2>📅 Plano A - Metas Semanais</h2>
+      <h2>📅 Plano A - Metas Semanais</h2>
 
-  <h3>Semana 1</h3>
-  <ul>
-    <li>✅ Definir nome e identidade visual</li>
-    <li>✅ Criar logo e redes sociais</li>
-    <li>✅ Listar equipamentos e fornecedores</li>
-  </ul>
+      <h3>Semana 1</h3>
+      <ul>
+        <li>✅ Definir nome e identidade visual</li>
+        <li>✅ Criar logo e redes sociais</li>
+        <li>✅ Listar equipamentos e fornecedores</li>
+      </ul>
 
-  <h3>Semana 2</h3>
-  <ul>
-    <li>✅ Organizar espaço físico</li>
-    <li>✅ Testar equipamentos</li>
-    <li>✅ Criar tabela de serviços</li>
-  </ul>
+      <h3>Semana 2</h3>
+      <ul>
+        <li>✅ Organizar espaço físico</li>
+        <li>✅ Testar equipamentos</li>
+        <li>✅ Criar tabela de serviços</li>
+      </ul>
 
-  <h3>Semana 3</h3>
-  <ul>
-    <li>✅ Atendimentos promocionais</li>
-    <li>✅ Criar portfólio visual</li>
-    <li>✅ Oferecer combos para vans</li>
-  </ul>
+      <h3>Semana 3</h3>
+      <ul>
+        <li>✅ Atendimentos promocionais</li>
+        <li>✅ Criar portfólio visual</li>
+        <li>✅ Oferecer combos para vans</li>
+      </ul>
 
-  <h3>Semana 4</h3>
-  <ul>
-    <li>✅ Abrir MEI</li>
-    <li>✅ Criar planilha financeira</li>
-    <li>✅ Iniciar curso de remap</li>
-  </ul>
+      <h3>Semana 4</h3>
+      <ul>
+        <li>✅ Abrir MEI</li>
+        <li>✅ Criar planilha financeira</li>
+        <li>✅ Iniciar curso de remap</li>
+      </ul>
 
-  <h3>🎨 Identidade Visual</h3>
-  <div class="color-palette">
-    <div class="color-box" style="background-color: #1c1c1c;"><span>#1c1c1c</span></div>
-    <div class="color-box" style="background-color: #eaeaea; color: #1c1c1c;"><span>#eaeaea</span></div>
-    <div class="color-box" style="background-color: #ff3b3b;"><span>#ff3b3b</span></div>
-    <div class="color-box" style="background-color: #2980b9;"><span>#2980b9</span></div>
-  </div>
+      <h3>🎨 Identidade Visual</h3>
+      <div class="color-palette">
+        <div class="color-box" style="background-color: #1c1c1c;"><span>#1c1c1c</span></div>
+        <div class="color-box" style="background-color: #eaeaea; color: #1c1c1c;"><span>#eaeaea</span></div>
+        <div class="color-box" style="background-color: #ff3b3b;"><span>#ff3b3b</span></div>
+        <div class="color-box" style="background-color: #2980b9;"><span>#2980b9</span></div>
+      </div>
 
-  <h3>📈 Faturamento Estimado</h3>
-  <table>
-    <tr>
-      <th>Mês</th>
-      <th>Veículos/dia</th>
-      <th>Preço médio</th>
-      <th>Faturamento</th>
-      <th>Lucro</th>
-    </tr>
-    <tr><td>1</td><td>2</td><td>R$ 100</td><td>R$ 4.000</td><td>R$ 2.500</td></tr>
-    <tr><td>2</td><td>4</td><td>R$ 120</td><td>R$ 9.600</td><td>R$ 6.500</td></tr>
-    <tr><td>3</td><td>6</td><td>R$ 130</td><td>R$ 15.600</td><td>R$ 11.000</td></tr>
-  </table>
+      <h3>📈 Faturamento Estimado</h3>
+      <table>
+        <tr>
+          <th>Mês</th>
+          <th>Veículos/dia</th>
+          <th>Preço médio</th>
+          <th>Faturamento</th>
+          <th>Lucro</th>
+        </tr>
+        <tr><td>1</td><td>2</td><td>R$ 100</td><td>R$ 4.000</td><td>R$ 2.500</td></tr>
+        <tr><td>2</td><td>4</td><td>R$ 120</td><td>R$ 9.600</td><td>R$ 6.500</td></tr>
+        <tr><td>3</td><td>6</td><td>R$ 130</td><td>R$ 15.600</td><td>R$ 11.000</td></tr>
+      </table>
 
-  <h3>🔧 Remap Stage 1</h3>
-  <ul>
-    <li>Estudo teórico: OBD2, CAN bus, ECU basics</li>
-    <li>Ferramentas: KESSv2, WinOLS, ECM Titanium</li>
-    <li>Prática com carros da família e oficinas parceiras</li>
-  </ul>
-</section>
+      <h3>🔧 Remap Stage 1</h3>
+      <ul>
+        <li>Estudo teórico: OBD2, CAN bus, ECU basics</li>
+        <li>Ferramentas: KESSv2, WinOLS, ECM Titanium</li>
+        <li>Prática com carros da família e oficinas parceiras</li>
+      </ul>
+    </section>
 
     <section id="planoB" class="page">
-  <h2>🧭 Plano B - Alternativas e Expansão</h2>
-  <ul>
-    <li>Serviços paralelos: película, acessórios, limpeza</li>
-    <li>Freelance técnico: sites, automações, marketing</li>
-    <li>Conteúdo digital: YouTube, Instagram, blog</li>
-    <li>Educação: cursos de remap, gestão, vendas</li>
-  </ul>
-  <blockquote>“Plano B não é fuga. É reforço.”</blockquote>
-</section>
+      <h2>🧭 Plano B - Alternativas e Expansão</h2>
+      <ul>
+        <li>Serviços paralelos: película, acessórios, limpeza</li>
+        <li>Freelance técnico: sites, automações, marketing</li>
+        <li>Conteúdo digital: YouTube, Instagram, blog</li>
+        <li>Educação: cursos de remap, gestão, vendas</li>
+      </ul>
+      <blockquote>“Plano B não é fuga. É reforço.”</blockquote>
+    </section>
+
     <section id="ferramentas" class="page">
-  <h2>🔧 Ferramentas e Equipamentos</h2>
-  <form class="checklist">
-    <label><input type="checkbox"> Lavadora WAP Ousada WL 2610</label>
-    <label><input type="checkbox"> Snow Foam Sgt-9923</label>
-    <label><input type="checkbox"> Luva Dub Glove + Luva Lincoln</label>
-    <label><input type="checkbox"> Filme Stretch para volante</label>
-    <label><input type="checkbox"> Toalhas microfibra (carro, rodas, portas)</label>
-    <label><input type="checkbox"> 4 pincéis para detalhamento</label>
-    <label><input type="checkbox"> Abafador UAD 2000 da 3M</label>
-    <label><input type="checkbox"> Capacete V-Gard</label>
-    <label><input type="checkbox"> Óculos de segurança</label>
-    <label><input type="checkbox"> Protetor de orelha (modelo, portas)</label>
-    <label><input type="checkbox"> Luvas de borracha</label>
-  </form>
-</section>
+      <h2>🔧 Ferramentas e Equipamentos</h2>
+      <form class="checklist">
+        <label><input type="checkbox"> Lavadora WAP Ousada WL 2610</label>
+        <label><input type="checkbox"> Snow Foam Sgt-9923</label>
+        <label><input type="checkbox"> Luva Dub Glove + Luva Lincoln</label>
+        <label><input type="checkbox"> Filme Stretch para volante</label>
+        <label><input type="checkbox"> Toalhas microfibra (carro, rodas, portas)</label>
+        <label><input type="checkbox"> 4 pincéis para detalhamento</label>
+        <label><input type="checkbox"> Abafador UAD 2000 da 3M</label>
+        <label><input type="checkbox"> Capacete V-Gard</label>
+        <label><input type="checkbox"> Óculos de segurança</label>
+        <label><input type="checkbox"> Protetor de orelha (modelo, portas)</label>
+        <label><input type="checkbox"> Luvas de borracha</label>
+      </form>
+    </section>
 
     <section id="produtos" class="page">
-  <h2>🧼 Produtos para Limpeza</h2>
-  <form class="checklist">
-    <label><input type="checkbox"> DUB pré lavagem</label>
-    <label><input type="checkbox"> Álcool 70%</label>
-    <label><input type="checkbox"> Detergente</label>
-    <label><input type="checkbox"> Sabão em pó</label>
-    <label><input type="checkbox"> Cera Pastosa</label>
-    <label><input type="checkbox"> Cera Spray Vonixx</label>
-    <label><input type="checkbox"> Vela Qualitex</label>
-    <label><input type="checkbox"> Shampoo Cadillac Neutro 5L</label>
-    <label><input type="checkbox"> Demolidor Cadillac 5L</label>
-    <label><input type="checkbox"> Multilimpador Visão Química</label>
-    <label><input type="checkbox"> Aromatizantes Visão Química</label>
-    <label><input type="checkbox"> Silicone Gel</label>
-    <label><input type="checkbox"> Pretinho Cadillac</label>
-  </form>
-</section>
+      <h2>🧼 Produtos para Limpeza</h2>
+      <form class="checklist">
+        <label><input type="checkbox"> DUB pré lavagem</label>
+        <label><input type="checkbox"> Álcool 70%</label>
+        <label><input type="checkbox"> Detergente</label>
+        <label><input type="checkbox"> Sabão em pó</label>
+        <label><input type="checkbox"> Cera Pastosa</label>
+        <label><input type="checkbox"> Cera Spray Vonixx</label>
+        <label><input type="checkbox"> Vela Qualitex</label>
+        <label><input type="checkbox"> Shampoo Cadillac Neutro 5L</label>
+        <label><input type="checkbox"> Demolidor Cadillac 5L</label>
+        <label><input type="checkbox"> Multilimpador Visão Química</label>
+        <label><input type="checkbox"> Aromatizantes Visão Química</label>
+        <label><input type="checkbox"> Silicone Gel</label>
+        <label><input type="checkbox"> Pretinho Cadillac</label>
+      </form>
+
+    </section>
+  </div>
 
   <script src="script.js"></script>
 </body>

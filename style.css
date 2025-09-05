@@ -1,10 +1,10 @@
 :root {
-  --bg-color: #1c1c1c;
+  --bg-color: #0d0d0f;
   --text-color: #eaeaea;
   --accent-red: #ff3b3b;
-  --accent-blue: #2980b9;
-  --card-bg: #2c2c2c;
-  --border-color: #444;
+  --accent-blue: #4da6ff;
+  --card-bg: #1a1a1d;
+  --border-color: #333;
 }
 
 body.light {
@@ -17,9 +17,15 @@ body.light {
 html {
   scroll-behavior: smooth;
 }
-
 body {
-  font-family: 'Segoe UI', sans-serif;
+  background-image: url('garage-texture.png'); /* substitua pelo nome correto do arquivo */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+body {
+  font-family: 'Orbitron', sans-serif;
   background-color: var(--bg-color);
   color: var(--text-color);
   margin: 0;
@@ -31,6 +37,50 @@ body {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+.logo-nav img {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  padding: 0;
+  height: 80px;
+  width: auto;
+  border-radius: 8px;
+  display: block;
+}
+
+.logo-container {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.logo-container img {
+  max-width: 100px;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+
+.theme-button-container {
+  text-align: right;
+  margin-top: 20px;
+}
+
+.theme-button-container button {
+  padding: 10px 20px;
+  font-size: 0.95rem;
+  border-radius: 10px;
+  background-color: var(--accent-blue);
+  color: var(--text-color);
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.theme-button-container button:hover {
+  background-color: var(--accent-red);
+}
+
 h1, h2, h3 {
   font-weight: 600;
   margin-bottom: 10px;
@@ -38,9 +88,9 @@ h1, h2, h3 {
 }
 
 .container {
-  padding: 20px;
   max-width: 800px;
   margin: auto;
+  padding: 20px;
 }
 
 .top-nav {
@@ -77,6 +127,7 @@ nav ul {
   justify-content: center;
   flex-wrap: wrap;
   gap: 12px;
+  align-items: center;
 }
 
 nav li {
@@ -241,4 +292,18 @@ blockquote {
     font-size: 0.9rem;
     padding: 8px 10px;
   }
+
+  .theme-button-container {
+    text-align: center;
+  }
+}
+.top-nav,
+.page {
+  max-width: 800px;
+  margin: 20px auto;
+  border-radius: 16px;
+  background-color: var(--card-bg);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  padding: 20px;
+  border: 1px solid var(--border-color);
 }
